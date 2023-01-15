@@ -2,23 +2,29 @@
     margin-top: 35px;
 }
 
-.more-suggestions__title {
-    margin-top: 50px;
-    border-top: var(--main-border);
-    padding-top: 40px;
-}
+.more-suggestions {
+    margin-top: 30px;
+    margin-bottom: 20px;
 
+    border-top: var(--main-border);
+    padding-top: 30px;
+}
 .more-suggestions__title {
-    margin-bottom: 30px;
+    margin-top: -10px;
+    margin-bottom: 20px;
 }
 
 .more-suggestions__icons {
     display: flex;
+
+    justify-content: space-between;
 }
 
-.more-suggestions__icon {
-    margin-right: 30px;
+.more-suggestions__icon,
+.more-suggestions__icon a {
+    /* margin-right: 30px; */
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
 }
@@ -26,7 +32,7 @@
 .more-suggestions__icon-image {
     width: 60px;
     height: 60px;
-    background-color: var(--yellow);
+    background-color: var(--rose-quartz);
     border-radius: 10px;
     display: flex;
     justify-content: center;

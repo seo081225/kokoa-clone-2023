@@ -6,13 +6,15 @@
 .user-component__column:first-child {
     display: flex;
     align-items: center;
+    margin-bottom: 5px;
 }
 
 .user-component__avatar {
     width: 70px;
     height: 70px;
-    border-radius: 30px;
+    border-radius: 25px;
     margin-right: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .user-component__avatar--xl {
@@ -23,11 +25,11 @@
 .user-component__avatar--sm {
     width: 60px;
     height: 60px;
-    border-radius: 25px;
+    border-radius: 20px;
 }
 
 .user-componet__title {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 22px;
 }
 .user-componet__subtitle {
@@ -37,7 +39,10 @@
 
 .user-componet__title--not-bold {
     font-size: 17px;
-    font-weight: 400;
+}
+
+.user-componet__title--uppercase {
+    text-transform: uppercase;
 }
 
 .user-component__column:last-child {
@@ -50,4 +55,15 @@
 .user-component__time {
     margin-bottom: 10px;
     display: block;
+}
+
+.user-componet__music {
+    padding: 10px;
+    border: 1px solid #92a8d1;
+    border-radius: 30px;
+    display: block;
+}
+
+.fa-caret-right {
+    color: #92a8d1;
 }

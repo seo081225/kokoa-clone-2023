@@ -1,0 +1,19 @@
+.channel-screen {
+    padding: 0px var(--horizontal-space);
+}
+
+.channel-screen__channel {
+    margin-top: 5px;
+    padding-top: 15px;
+}
+
+.channel-screen__channel-header {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.channel-screen__channel-header span:first-child {
+    margin-right: 5px;
+}
