@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="css/styles.css" />
+        <script src="https://kit.fontawesome.com/56f7bebfad.js" crossorigin="anonymous"></script>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,42 +11,58 @@
     <body>
         <div class="status-bar">
             <div class="status-bar__column">
-                <span> No Service </span>
-                <i class="fas fa-wifi"></i>
-            </div>
-            <div class="status-bar__column">
                 <span> 13:17 </span>
+                <i class="fa-solid fa-location-arrow"></i>
             </div>
+            <div class="status-bar__column"></div>
             <div class="status-bar__column">
-                <span>100%</span>
-                <i class="fas fa-battery-full fa-lg"></i>
-                <i class="fas fa-bolt"></i>
+                <i class="fa-solid fa-signal fa-lg"></i>
+                <sapn>LTE</sapn>
+                <i class="fa-solid fa-battery-full fa-lg"></i>
             </div>
         </div>
 
         <header class="screen-header">
             <h1 class="screen-header__title">Chats</h1>
             <div class="screen-header__icons">
-                <span><i class="fas fa-search fa-lg"></i></span>
-                <span><i class="far fa-comment-dots fa-lg"></i></span>
-                <span><i class="fas fa-music fa-lg"></i></span>
-                <span><i class="fas fa-cog fa-lg"></i></span>
+                <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+                <span><i class="fa-regular fa-comment-dots fa-lg"></i></span>
+                <span><i class="fa-regular fa-comments fa-lg"></i></span>
+                <span>
+                    <a class="nav__link" href="settings.html">
+                        <i class="fa-solid fa-gear fa-lg"></i>
+                    </a>
+                </span>
             </div>
         </header>
 
         <main class="main-screen">
-            <a href="chat.html">
+            <a href="chats/chat-tiger-r.html">
                 <div class="user-component">
                     <div class="user-component__column">
-                        <img src="screenshots/image.JPG" class="user-component__avatar user-component__avatar" />
+                        <img src="image/tiger-r.png" class="user-component__avatar user-component__avatar" />
                         <div class="user-componet__text">
-                            <h4 class="user-componet__title">Seo</h4>
-                            <h6 class="user-componet__subtitle">Please check My Kokoa Account Info</h6>
+                            <h4 class="user-componet__title">적호🐯</h4>
+                            <h6 class="user-componet__subtitle">오! 나중에 아아 한잔 하자구</h6>
                         </div>
                     </div>
                     <div class="user-component__column">
-                        <span class="user-component__time">13:17</span>
+                        <span class="user-component__time">Yesterday</span>
                         <span class="badge">1</span>
+                    </div>
+                </div>
+            </a>
+            <a href="chats/chat-cat.html">
+                <div class="user-component">
+                    <div class="user-component__column">
+                        <img src="image/cat.png" class="user-component__avatar user-component__avatar" />
+                        <div class="user-componet__text">
+                            <h4 class="user-componet__title">솜핑냥🐈</h4>
+                            <h6 class="user-componet__subtitle">나도🐈</h6>
+                        </div>
+                    </div>
+                    <div class="user-component__column">
+                        <span class="user-component__time">Jan 12</span>
                     </div>
                 </div>
             </a>
@@ -54,30 +71,29 @@
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__btn">
-                    <a class="nav__link" href="friends.html"> <i class="far fa-user fa-2x"></i></a>
+                    <a class="nav__link" href="friends.html"> <i class="fa-regular fa-user fa-2x"></i></a>
                 </li>
                 <li class="nav__btn">
                     <a class="nav__link" href="chats.html">
                         <span class="nav__notification badge">1</span>
-                        <i class="fas fa-comment fa-2x"></i>
+                        <i class="fa-solid fa-comment fa-2x"></i>
                     </a>
                 </li>
                 <li class="nav__btn">
-                    <a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i></a>
+                    <a class="nav__link" href="library.html"><i class="fa-solid fa-book fa-2x"></i></a>
                 </li>
                 <li class="nav__btn">
                     <a class="nav__link" href="more.html">
                         <span class="nav__ellipsis dot"></span>
-                        <i class="fas fa-ellipsis-h fa-2x"></i>
+                        <i class="fa-solid fa-ellipsis fa-2x"></i>
                     </a>
                 </li>
             </ul>
         </nav>
 
         <div id="no-mobile">
-            <span>Your screen is too big ㅠㅠ</span>
+            <span>Your screen is too big 😭</span>
+            <span>Please make the screen smaller.</span>
         </div>
-
-        <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
     </body>
 </html>

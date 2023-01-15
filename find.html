@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="css/styles.css" />
+        <script src="https://kit.fontawesome.com/56f7bebfad.js" crossorigin="anonymous"></script>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,60 +11,101 @@
     <body>
         <div class="status-bar">
             <div class="status-bar__column">
-                <span> No Service </span>
-                <i class="fas fa-wifi"></i>
-            </div>
-            <div class="status-bar__column">
                 <span> 13:17 </span>
+                <i class="fa-solid fa-location-arrow"></i>
             </div>
+            <div class="status-bar__column"></div>
             <div class="status-bar__column">
-                <span>100%</span>
-                <i class="fas fa-battery-full fa-lg"></i>
-                <i class="fas fa-bolt"></i>
+                <i class="fa-solid fa-signal fa-lg"></i>
+                <sapn>LTE</sapn>
+                <i class="fa-solid fa-battery-full fa-lg"></i>
             </div>
         </div>
 
         <header class="screen-header">
             <h1 class="screen-header__title">Find</h1>
             <div class="screen-header__icons">
-                <span><i class="fas fa-search fa-lg"></i></span>
-                <span><i class="fas fa-cog fa-lg"></i></span>
+                <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+                <span>
+                    <a class="nav__link" href="settings.html">
+                        <i class="fa-solid fa-gear fa-lg"></i>
+                    </a>
+                </span>
                 <span class="screen-header__ellipsis dot"></span>
             </div>
         </header>
 
         <main class="main-screen">
             <div class="icon-row">
-                <div class="icon-row__icon"><i class="fas fa-qrcode"></i> <span>QR Code</span></div>
-                <div class="icon-row__icon"><i class="far fa-address-book"></i><span>Add by Contacts</span></div>
-                <div class="icon-row__icon"><i class="fas fa-fingerprint"></i><span>Add by ID</span></div>
-                <div class="icon-row__icon"><i class="far fa-envelope"></i><span>Invite</span></div>
+                <div class="icon-row__icon">
+                    <i class="fa-solid fa-qrcode"></i>
+                    <span>QR Code</span>
+                </div>
+                <div class="icon-row__icon">
+                    <i class="fa-regular fa-address-book"></i>
+                    <span>Add by Contacts</span>
+                </div>
+                <div class="icon-row__icon">
+                    <i class="fa-solid fa-user-plus"></i>
+                    <span>Add by ID</span>
+                </div>
+                <div class="icon-row__icon">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>Invite</span>
+                </div>
             </div>
             <div class="recommended-friends">
                 <h6 class="recommended-friends__title">Recommended Friends</h6>
                 <span>You have no recommended friends.</span>
             </div>
+
             <div class="open-chat">
                 <div class="open-chat__header">
                     <h4>Open Chat</h4>
-                    <span>Go to Openchat Home</span>
-                    <i class="fas fa-chevron-right fa-xs"></i>
+                    <div>
+                        <span>Go to Openchat Home</span>
+                        <i class="fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
                 </div>
                 <div class="open-post">
                     <div class="open-post__column">
-                        <h5 class="open-post__title">#BTS</h5>
+                        <h5 class="open-post__title">#bts</h5>
                         <h6 class="open-post__hashtags">#bts#army#friends</h6>
                         <div class="open-post__members">
-                            <img src="screenshots/image.JPG" />
-                            <span class="open-post__member-count">802 members</span>
+                            <img src="image/bts.jpg" />
+                            <span class="open-post__member-count">20M members</span>
                             <div class="divider"></div>
                             <span class="open-post__member-status">Active</span>
                         </div>
                     </div>
                     <div class="open-post__column">
                         <div class="open-post__photo">
-                            <img src="screenshots/image.JPG" />
-                            <div class="open-post__heart-count"><i class="fas fa-heart fa-xs"></i><span>326</span></div>
+                            <img src="image/bts.jpg" />
+                            <div class="open-post__heart-count">
+                                <i class="fas fa-heart fa-xs"></i>
+                                <span>20M</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="open-post">
+                    <div class="open-post__column">
+                        <h5 class="open-post__title">#pengsoo</h5>
+                        <h6 class="open-post__hashtags">#pengsoo#pengclub</h6>
+                        <div class="open-post__members">
+                            <img src="image/pengsoo.jpg" />
+                            <span class="open-post__member-count">808 members</span>
+                            <div class="divider"></div>
+                            <span class="open-post__member-status">Active</span>
+                        </div>
+                    </div>
+                    <div class="open-post__column">
+                        <div class="open-post__photo">
+                            <img src="image/pengsoo.jpg" />
+                            <div class="open-post__heart-count">
+                                <i class="fas fa-heart fa-xs"> </i>
+                                <span>808</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -73,28 +115,29 @@
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__btn">
-                    <a class="nav__link" href="friends.html"> <i class="far fa-user fa-2x"></i></a>
+                    <a class="nav__link" href="friends.html"> <i class="fa-solid fa-user fa-2x"></i></a>
                 </li>
                 <li class="nav__btn">
                     <a class="nav__link" href="chats.html">
                         <span class="nav__notification badge">1</span>
-                        <i class="far fa-comment fa-2x"></i>
+                        <i class="fa-regular fa-comment fa-2x"></i>
                     </a>
                 </li>
                 <li class="nav__btn">
-                    <a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i></a>
+                    <a class="nav__link" href="library.html"><i class="fa-solid fa-book fa-2x"></i></a>
                 </li>
                 <li class="nav__btn">
                     <a class="nav__link" href="more.html">
-                        <span class="nav__ellipsis"></span>
-                        <i class="fas fa-ellipsis-h fa-2x"></i>
+                        <span class="nav__ellipsis dot"></span>
+                        <i class="fa-solid fa-ellipsis fa-2x"></i>
                     </a>
                 </li>
             </ul>
         </nav>
 
         <div id="no-mobile">
-            <span>Your screen is too big ㅠㅠ</span>
+            <span>Your screen is too big 😭</span>
+            <span>Please make the screen smaller.</span>
         </div>
 
         <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>

@@ -1,0 +1,50 @@
+#no-mobile {
+    position: absolute;
+    z-index: 99;
+    height: 100vh;
+    background-color: var(--serenity);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 32px;
+    top: 0;
+}
+
+@keyframes hideSplashScreen {
+    for {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+#splash-screen {
+    background: linear-gradient(to bottom right, var(--rose-quartz), var(--serenity));
+    color: white;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    animation: hideSplashScreen 0.4s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+@media screen and (max-width: 600px) {
+    #no-mobile {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    #splash-screen {
+        display: none;
+    }
+}
