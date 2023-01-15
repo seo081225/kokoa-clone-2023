@@ -28,6 +28,23 @@
     border-radius: 20px;
 }
 
+.user-component__own-title {
+    display: flex;
+}
+
+.user-component__own-title div {
+    background-color: var(--serenity);
+    height: 25px;
+    width: 25px;
+    padding: 1px;
+    border-radius: 50%;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
 .user-componet__title {
     font-weight: 700;
     font-size: 22px;
