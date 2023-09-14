@@ -1,3 +1,3 @@
 #Kokoa clone 2023 update
 
-HTML & CSS are so much fun!
+코코아톡 졸업과제
